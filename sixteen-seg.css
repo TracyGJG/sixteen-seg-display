@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+}
+
+section {
+  float: left;
+  width: 600px;
+  height: 280px;
+  columns: 6;
+  padding: 1em;
+}
+
+.sixteen-seg {
+  float: left;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-top: 2em;
+  margin-left: 4em;
+}
+
+.sixteen-seg > * {
+  background-color: #333;
+  border-color: #333;
+  position: absolute;
+}
+
+.sixteen-seg > *::before,
+.sixteen-seg > *::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+}
+
+.seg0,
+.seg3,
+.seg6,
+.seg7,
+.segB,
+.segF {
+  width: 40px;
+  height: 20px;
+  top: 0;
+  left: 21px;
+}
+
+.seg1,
+.seg2,
+.seg4,
+.seg5,
+.seg8,
+.segC {
+  width: 20px;
+  height: 60px;
+  top: 21px;
+  left: 0;
+}
+
+.seg2,
+.seg5 {
+  left: 124px;
+}
+
+.seg8,
+.segC {
+  left: 62px;
+}
+
+.seg3,
+.segB {
+  top: 82px;
+}
+
+.seg4,
+.seg5,
+.segC {
+  top: 103px;
+}
+
+.seg6,
+.segF {
+  top: 164px;
+}
+
+.seg7,
+.segB,
+.segF {
+  left: 83px;
+}
+
+.seg0::before,
+.seg3::before,
+.seg6::before,
+.seg7::before,
+.segB::before,
+.segF::before {
+  left: -10px;
+  border-left-width: 0;
+  border-right-color: inherit;
+}
+
+.seg0::after,
+.seg3::after,
+.seg6::after,
+.seg7::after,
+.segB::after,
+.segF::after {
+  right: -10px;
+  border-right-width: 0;
+  border-left-color: inherit;
+}
+
+.seg1::before,
+.seg2::before,
+.seg4::before,
+.seg5::before,
+.seg8::before,
+.segC::before {
+  top: -10px;
+  border-top-width: 0;
+  border-bottom-color: inherit;
+}
+
+.seg1::after,
+.seg2::after,
+.seg4::after,
+.seg5::after,
+.seg8::after,
+.segC::after {
+  bottom: -10px;
+  border-bottom-width: 0;
+  border-top-color: inherit;
+}
+
+.seg9,
+.segA,
+.segD,
+.segE {
+  width: 38px;
+  height: 58px;
+  top: 22px;
+  left: 22px;
+}
+
+.segD,
+.segE {
+  top: 104px;
+}
+
+.segA,
+.segE {
+  left: 84px;
+}
+
+.seg9::before,
+.segA::before,
+.segD::before,
+.segE::before {
+  width: 0;
+  height: 0;
+  border-width: 22px 12px;
+}
+
+.seg9::after,
+.segA::after,
+.segD::after,
+.segE::after {
+  width: 0;
+  height: 0;
+  border-width: 22px 12px;
+}
+
+.seg9::after,
+.segA::before,
+.segD::before,
+.segE::after {
+  top: 0;
+  border-top-color: #000;
+}
+
+.seg9::after,
+.segA::after,
+.segD::after,
+.segE::after {
+  right: 0;
+  border-right-color: #000;
+}
+
+.seg9::before,
+.segA::after,
+.segD::after,
+.segE::before {
+  bottom: 0;
+  border-bottom-color: #000;
+}
+
+.seg9::before,
+.segA::before,
+.segD::before,
+.segE::before {
+  left: 0;
+  border-left-color: #000;
+}
+
+.sixteen-seg.--seg0 .seg0,
+.sixteen-seg.--seg1 .seg1,
+.sixteen-seg.--seg2 .seg2,
+.sixteen-seg.--seg3 .seg3,
+.sixteen-seg.--seg4 .seg4,
+.sixteen-seg.--seg5 .seg5,
+.sixteen-seg.--seg6 .seg6,
+.sixteen-seg.--seg7 .seg7,
+.sixteen-seg.--seg8 .seg8,
+.sixteen-seg.--seg9 .seg9,
+.sixteen-seg.--segA .segA,
+.sixteen-seg.--segB .segB,
+.sixteen-seg.--segC .segC,
+.sixteen-seg.--segD .segD,
+.sixteen-seg.--segE .segE,
+.sixteen-seg.--segF .segF {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+label {
+  width: 80px;
+  color: #fff;
+  display: block;
+  line-height: 2.25rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+input {
+  cursor: inherit;
+  margin-right: 0.5em;
+}
