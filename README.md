@@ -1,7 +1,7 @@
 # sixteen-seg-display
-16 Segment Display Emulator
+16-Segment Display Emulator
 ---
-This is a follow-on from my [seven-segment-display emulator project](https://github.com/TracyGJG/seven-seg-display/blob/master/README.md).
+This is a follow-on from my [seven-segment display emulator project](https://github.com/TracyGJG/seven-seg-display/blob/master/README.md).
 
 In this edition the segments are arranged as follows:
 
