@@ -99,7 +99,7 @@
       ipBit(ip, 0) ||
       // ipBit(ip, 1) ||
       ipBit(ip, 2) ||
-      // ipBit(ip, 3) ||
+      ipBit(ip, 3) ||
       ipBit(ip, 4) ||
       // ipBit(ip, 5) ||
       // ipBit(ip, 6) ||
@@ -225,9 +225,9 @@
       ipBit(ip, 0) ||
       // ipBit(ip, 1) ||
       // ipBit(ip, 2) ||
-      // ipBit(ip, 3) ||
+      ipBit(ip, 3) ||
       ipBit(ip, 4) ||
-      // ipBit(ip, 5) ||
+      ipBit(ip, 5) ||
       ipBit(ip, 6) ||
       // ipBit(ip, 7) ||
       ipBit(ip, 8) ||
@@ -435,7 +435,7 @@
       ipBit(ip, 0) ||
       // ipBit(ip, 1) ||
       // ipBit(ip, 2) ||
-      ipBit(ip, 3) ||
+      // ipBit(ip, 3) ||
       // ipBit(ip, 4) ||
       // ipBit(ip, 5) ||
       // ipBit(ip, 6) ||
@@ -477,9 +477,9 @@
       // ipBit(ip, 0) ||
       // ipBit(ip, 1) ||
       ipBit(ip, 2) ||
-      // ipBit(ip, 3) ||
+      ipBit(ip, 3) ||
       ipBit(ip, 4) ||
-      // ipBit(ip, 5) ||
+      ipBit(ip, 5) ||
       ipBit(ip, 6) ||
       // ipBit(ip, 7) ||
       ipBit(ip, 8) ||
@@ -603,9 +603,9 @@
       // ipBit(ip, 0) ||
       // ipBit(ip, 1) ||
       // ipBit(ip, 2) ||
-      ipBit(ip, 3) ||
+      // ipBit(ip, 3) ||
       // ipBit(ip, 4) ||
-      ipBit(ip, 5) ||
+      // ipBit(ip, 5) ||
       // ipBit(ip, 6) ||
       // ipBit(ip, 7) ||
       // ipBit(ip, 8) ||
@@ -679,7 +679,7 @@
       // ipBit(ip, 34) ||
       ipBit(ip, 35)
         ? ` --seg${seg}`
-        : ''
+        : '',
   ];
   document.querySelector('section').addEventListener('change', evt => {
     const input = decToBin(evt.target['value']);
